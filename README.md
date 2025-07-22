@@ -96,7 +96,7 @@ Pour une documentation technique complète, consultez notre [rapport technique d
 
 Pour voir RuraNetSim en action, consultez notre démonstration vidéo complète :
 
-[![Voir la démonstration](https://img.shields.io/badge/📽️-Voir_la_démo_sur_Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/VOTRE_LIEN_DRIVE_ICI)
+[![Voir la démonstration](https://img.shields.io/badge/📽️-Voir_la_démo_sur_Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1IPg1VfdGOkxCZcscHfsOJHletF3OX6TO?usp=sharing)
 
 Cette vidéo couvre :
 - L'interface utilisateur et la navigation

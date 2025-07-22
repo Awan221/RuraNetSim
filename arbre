@@ -1,0 +1,99 @@
+ruranet_sim/
+│
+├── backend/                      # Projet Django
+│   ├── Dockerfile                # Configuration Docker pour le backend
+│   ├── requirements.txt          # Dépendances Python
+│   ├── manage.py                 # Script de gestion Django
+│   ├── ruranet_sim/              # Configuration principale Django
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py           # Paramètres Django
+│   │   ├── urls.py               # URLs principales
+│   │   └── wsgi.py
+│   │
+│   ├── api/                      # Application API REST
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py             # Modèles de données
+│   │   ├── serializers.py        # Sérialiseurs REST
+│   │   ├── tests.py
+│   │   ├── urls.py               # URLs de l'API
+│   │   └── views.py              # Vues de l'API
+│   │
+│   ├── simulation/               # Application de simulation
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py             # Modèles de simulation
+│   │   ├── propagation/          # Modèles de propagation radio
+│   │   │   ├── __init__.py
+│   │   │   ├── okumura_hata.py   # Modèle Okumura-Hata
+│   │   │   └── cost_231.py       # Modèle COST-231
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── users/                    # Application utilisateurs
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py             # Modèle utilisateur
+│   │   ├── tests.py
+│   │   └── views.py
+│   │
+│   └── utils/                    # Utilitaires
+│       ├── __init__.py
+│       ├── export.py             # Export PDF
+│       └── validators.py         # Validateurs
+│
+├── frontend/                     # Application Vue.js
+│   ├── Dockerfile                # Configuration Docker pour le frontend
+│   ├── .env                      # Variables d'environnement
+│   ├── .env.production           # Variables d'environnement pour la production
+│   ├── .gitignore
+│   ├── package.json              # Dépendances npm
+│   ├── vite.config.js            # Configuration Vite
+│   ├── index.html                # Page HTML principale
+│   ├── public/                   # Fichiers statiques
+│   │   ├── favicon.ico
+│   │   └── robots.txt
+│   │
+│   └── src/                      # Code source Vue.js
+│       ├── main.js               # Point d'entrée
+│       ├── App.vue               # Composant racine
+│       ├── router/               # Configuration du routeur
+│       │   └── index.js
+│       ├── store/                # Gestion d'état Vuex
+│       │   └── index.js
+│       ├── assets/               # Ressources statiques
+│       │   ├── logo.svg
+│       │   └── css/
+│       │       └── main.css
+│       ├── components/           # Composants Vue
+│       │   ├── common/
+│       │   │   ├── Navbar.vue
+│       │   │   └── Footer.vue
+│       │   ├── map/
+│       │   │   ├── MapView.vue
+│       │   │   └── AntennaMarker.vue
+│       │   ├── simulation/
+│       │   │   ├── SimulationForm.vue
+│       │   │   ├── ParametersInput.vue
+│       │   │   └── ResultsView.vue
+│       │   └── charts/
+│       │       ├── CoverageChart.vue
+│       │       └── CapacityChart.vue
+│       └── views/                # Pages Vue
+│           ├── Home.vue
+│           ├── Simulation.vue
+│           ├── Results.vue
+│           └── About.vue
+│
+├── docker-compose.yml            # Configuration Docker Compose
+├── .gitignore                    # Fichiers à ignorer par Git
+├── README.md                     # Documentation du projet
+└── .env.example                  # Exemple de variables d'environnement
